@@ -31,7 +31,7 @@ public class BaseTest {
 	public ExtentTest logger;
 
 	public void broweserSetup(String browser) {
-		if (browser.equalsIgnoreCase("chrome")) {
+		if (browser.equalsIgnoreCase ("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}
