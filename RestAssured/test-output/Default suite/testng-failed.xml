@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="framework.RestAssured.tests.OtherTest">
+      <class name="tests.CrudTest">
         <methods>
-          <include name="headerAssertions"/>
-          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="validateGetUser" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- framework.RestAssured.tests.OtherTest -->
+      </class> <!-- tests.CrudTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

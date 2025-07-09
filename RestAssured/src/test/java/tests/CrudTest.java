@@ -1,4 +1,4 @@
-package framework.RestAssured.tests;
+package tests;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
@@ -9,11 +9,11 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import framework.RestAssured.basetest.BaseTest;
-import framework.RestAssured.utils.PayloadManager;
+import basetest.BaseTest;
 import io.restassured.response.Response;
+import utils.PayloadManager;
 
-public class CRUDtest extends BaseTest {
+public class CrudTest extends BaseTest {
 
 	
 	
@@ -46,7 +46,7 @@ public class CRUDtest extends BaseTest {
 				.response();
 
 		String firstName = response.jsonPath().getString("data.first_name");
-		Assert.assertEquals(firstName, "Emma", "The firstname of the index ["+userdata+"] is not matched : ");
+		Assert.assertEquals(firstName, "Emma", "\nThe Error is that"+"The firstname of the index ["+userdata+"] is not matched : ");
 
 
 	}

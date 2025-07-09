@@ -1,4 +1,4 @@
-package framework.RestAssured.tests;
+package tests;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
 
-public class OtherTest  extends CRUDtest{
+public class OtherTest  extends CrudTest{
 	
 	@Test(dataProvider = "200")
 	@Parameters("expStatuscode")

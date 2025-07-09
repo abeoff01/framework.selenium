@@ -1,20 +1,22 @@
-package framework.RestAssured.basetest;
+package basetest;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 
 public class BaseTest {
-	
 
-    protected RequestSpecification requestSpec;
-    protected Properties config;
+	protected RequestSpecification requestSpec;
+	protected Properties config;
+
+//	protected Logger log = Log.getLogger(this.getClass());
 
     @BeforeClass
     public void setup() {
@@ -39,6 +41,13 @@ public class BaseTest {
                 .addHeader("Content-Type", "application/json")
                 .addHeader("x-api-key", authKey)
                 .build();
+        
+   //     log.info("Base URI set to: " + RestAssured.baseURI);
+       
     }
+    
+    public static void main(String[] args) {
+		System.out.println("popop");
+	}
 
 }

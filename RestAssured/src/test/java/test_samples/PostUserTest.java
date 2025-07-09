@@ -1,4 +1,4 @@
-package framework.RestAssured;
+package test_samples;
 
 import io.restassured.response.Response;
 
