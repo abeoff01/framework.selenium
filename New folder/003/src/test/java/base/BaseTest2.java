@@ -46,6 +46,10 @@ public class BaseTest2 {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			
+			
+			
+			
+			
 		}
 
 		else if (browser.equalsIgnoreCase("edge")) {
