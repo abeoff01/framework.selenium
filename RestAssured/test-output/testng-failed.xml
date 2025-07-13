@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="framework.RestAssured.tests.OtherTest">
+      <class name="tests.TypicalAPI">
         <methods>
-          <include name="headerAssertions"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- framework.RestAssured.tests.OtherTest -->
+      </class> <!-- tests.TypicalAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

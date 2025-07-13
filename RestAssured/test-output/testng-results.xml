@@ -2,24 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-09T00:26:17 IST" name="Default suite" finished-at="2025-07-09T00:26:20 IST" duration-ms="2652">
+  <suite started-at="2025-07-12T20:33:21 IST" name="Default suite" finished-at="2025-07-12T20:33:23 IST" duration-ms="2528">
     <groups>
     </groups>
-    <test started-at="2025-07-09T00:26:17 IST" name="Default test" finished-at="2025-07-09T00:26:20 IST" duration-ms="2652">
-      <class name="framework.RestAssured.tests.OtherTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:framework.RestAssured.tests.OtherTest@368f2016]" started-at="2025-07-09T00:26:17 IST" name="setup" finished-at="2025-07-09T00:26:18 IST" duration-ms="550" status="PASS">
+    <test started-at="2025-07-12T20:33:21 IST" name="Default test" finished-at="2025-07-12T20:33:23 IST" duration-ms="2528">
+      <class name="tests.TypicalAPI">
+        <test-method signature="test()[pri:0, instance:tests.TypicalAPI@4f6ee6e4]" started-at="2025-07-12T20:33:21 IST" name="test" finished-at="2025-07-12T20:33:23 IST" duration-ms="2481" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="nestedJsonAssertion()[pri:0, instance:framework.RestAssured.tests.OtherTest@368f2016]" started-at="2025-07-09T00:26:18 IST" name="nestedJsonAssertion" finished-at="2025-07-09T00:26:20 IST" duration-ms="2057" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- nestedJsonAssertion -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:framework.RestAssured.tests.OtherTest@368f2016]" started-at="2025-07-09T00:26:20 IST" name="tearDown" finished-at="2025-07-09T00:26:20 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- framework.RestAssured.tests.OtherTest -->
+        </test-method> <!-- test -->
+      </class> <!-- tests.TypicalAPI -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

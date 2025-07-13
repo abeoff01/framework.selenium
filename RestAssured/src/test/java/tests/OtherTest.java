@@ -1,4 +1,4 @@
-package framework.RestAssured.tests;
+package tests;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
@@ -15,16 +15,20 @@ import static org.hamcrest.Matchers.not;
 import java.util.List;
 
 import org.testng.Assert;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
 
-public class OtherTest  extends CRUDtest{
+public class OtherTest  extends CrudTest{
 	
-	@Test(dataProvider = "200")
+	
+	int expStatusCode = 200;
+	
+	@Test
 	@Parameters("expStatuscode")
-    public void headerAssertions(int expStatuscode) {
+    public void headerAssertions(@Optional ("Status code is not fetched") int expStatuscode) {
         given()
             .spec(requestSpec)
         .when()

@@ -1,4 +1,4 @@
-package framework.RestAssured.utils;
+package utils;
 
 import org.json.JSONObject;
 import org.testng.annotations.Test;
